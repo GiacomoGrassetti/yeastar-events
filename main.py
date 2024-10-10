@@ -25,7 +25,7 @@ async def lifespan(app: FastAPI):
     
 app = FastAPI(lifespan=lifespan)
 
-WEBSOCKET_URL = f"wss://{os.getenv('HOST')}"
+WEBSOCKET_URL = f"wss://{os.getenv('WS_HOST')}"
 
 headers = {
     "Content-Type": "application/json",
