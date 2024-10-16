@@ -1,1 +1,1 @@
-web: uvicorn main:app --workers 4
+web: uvicorn main:app --host 127.0.0.1 --port 8080 --workers 4
