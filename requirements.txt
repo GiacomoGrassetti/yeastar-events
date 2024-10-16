@@ -1,6 +1,6 @@
 fastapi
+fastapi-utilities
 requests
 python-dotenv
 uvicorn
 websockets
-jinja2

@@ -10,7 +10,7 @@ headers = {
 }
 
 response = requests.post(
-    f"{os.getenv("HOST")}/openapi/v1.0/get_token",
+    f"{os.getenv('HOST')}/openapi/v1.0/get_token",
     headers=headers,
     json={"username": os.getenv("CLIENT_ID"), "password": os.getenv("CLIENT_SECRET")},
     verify=False
