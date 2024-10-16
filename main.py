@@ -136,7 +136,11 @@ async def listen_to_yeastar_events():
     
 @app.get("/")
 async def root():
-    return {"message": "WebSocket monitor running"}
+    print("WebSocket monitor running")
+    return {
+        "status": "OK",
+        "message": "WebSocket monitor running"
+    }
 
 @app.get("/token")
 async def create_token():
