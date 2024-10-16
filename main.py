@@ -46,8 +46,6 @@ headers = {
     "User-Agent": "OpenAPI",
 }
 
-print(f"Host: {os.getenv('HOST')}\nWS Host: {WEBSOCKET_URL}\nClient ID: {os.getenv('CLIENT_ID')}\nClient Secret: {os.getenv('CLIENT_SECRET')}")
-
 def read_token():
     with open("token_access.json", "r") as f:
         token = json.load(f)["access_token"]
